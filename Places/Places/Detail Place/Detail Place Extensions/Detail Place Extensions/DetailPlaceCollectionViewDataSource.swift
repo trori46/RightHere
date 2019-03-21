@@ -24,8 +24,6 @@ extension DetailPlaceViewController: UICollectionViewDataSource {
         if place.photos.count != 0 {
             cell?.photoImageView?.image = place.photos[indexPath.row]
         }
-        cell?.layer.borderColor = #colorLiteral(red: 0.9211991429, green: 0.2922174931, blue: 0.431709826, alpha: 1)
-        cell?.layer.borderWidth = 5
         return cell!
     }
 }

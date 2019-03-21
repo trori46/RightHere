@@ -10,15 +10,15 @@ import UIKit
 
 class Rating: UIView {
     var rating: Double = 0.0
-    var firstColor: CGColor = UIColor.yellow.cgColor
+    var firstColor: CGColor = #colorLiteral(red: 0.9211991429, green: 0.2922174931, blue: 0.431709826, alpha: 1)
     var secondColor: CGColor = UIColor.white.cgColor
     
     let angles: [CGFloat] =
         [-9/10*CGFloat.pi, -7/10*CGFloat.pi, -5/10*CGFloat.pi, -3/10*CGFloat.pi, -1/10*CGFloat.pi,
          1/10*CGFloat.pi, 3/10*CGFloat.pi, 5/10*CGFloat.pi, 7/10*CGFloat.pi, 9/10*CGFloat.pi, -9/10*CGFloat.pi]
-    var starPoints = [CGPoint] ()
-    var filledHalf = [CGPoint] ()
-    var emptyHalf = [CGPoint] ()
+    var starPoints = [CGPoint]()
+    var filledHalf = [CGPoint]()
+    var emptyHalf = [CGPoint]()
     
     var starSize: CGFloat = 0
     
@@ -99,7 +99,6 @@ class Rating: UIView {
             }
             if starPoints[currentIndex].x < splitPoint.x {
                 filledHalf.append(starPoints[currentIndex])
-                
             }
             if ( starPoints[currentIndex].x > splitPoint.x ) {
                 emptyHalf.append(starPoints[currentIndex])
