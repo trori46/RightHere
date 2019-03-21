@@ -71,7 +71,7 @@ class DetailPlaceViewController: UIViewController, UITableViewDelegate {
     
     let transition = CustomTransitionAnimator()
     
-    var place:Place!
+    var place: Place!
     
     var mapView : MKMapView!
     
@@ -278,7 +278,7 @@ class DetailPlaceViewController: UIViewController, UITableViewDelegate {
             str.removeLast()
             str.removeLast()
             label?.text = str
-            self.placeTypeIcon?.image = self.place.icon
+            self.placeTypeIcon?.image = self.place.photo
             self.placeTypeIcon?.tintColor = #colorLiteral(red: 0.9211991429, green: 0.2922174931, blue: 0.431709826, alpha: 1)
             return true
         }

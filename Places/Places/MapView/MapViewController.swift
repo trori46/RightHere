@@ -377,10 +377,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                 var view: MKPinAnnotationView
                 view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 view.canShowCallout = true
+                view.pinTintColor = #colorLiteral(red: 0.9201840758, green: 0.2923389375, blue: 0.4312838316, alpha: 1)
                 view.calloutOffset = CGPoint(x: -5, y: 5)
                 view.leftCalloutAccessoryView = UIImageView(image: annotation.image!)
+                view.tintColor = #colorLiteral(red: 0.9211991429, green: 0.2922174931, blue: 0.431709826, alpha: 1)
+                view.leftCalloutAccessoryView?.backgroundColor = .white
                 view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure) as UIView
-                view.pinTintColor = #colorLiteral(red: 0.9201840758, green: 0.2923389375, blue: 0.4312838316, alpha: 1)
                 return view
             }
             let identifier = "pin"
@@ -433,7 +435,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     }
     
     var nameFilterArray = [ "Bar", "Cafe", "Restaurant", "Bank", "Night Club", "Museum", "Beauty Salon", "Pharmacy", "Hospital", "Bus Station", "Gas Station", "University", "Police", "Church", "Cemetery", "Park", "Gym"]
-    let iconFilterArray = [#imageLiteral(resourceName: "bar"),#imageLiteral(resourceName: "cafe"),#imageLiteral(resourceName: "restaurant"),#imageLiteral(resourceName: "bank"),#imageLiteral(resourceName: "nightClub"),#imageLiteral(resourceName: "museum"),#imageLiteral(resourceName: "beutySalon"),#imageLiteral(resourceName: "pharmacy"),#imageLiteral(resourceName: "hospital"),#imageLiteral(resourceName: "busStation"),#imageLiteral(resourceName: "gasStation"),#imageLiteral(resourceName: "university"),#imageLiteral(resourceName: "police"),#imageLiteral(resourceName: "church"),#imageLiteral(resourceName: "cemetery"),#imageLiteral(resourceName: "park"),#imageLiteral(resourceName: "gym")]
+    let iconFilterArray = [#imageLiteral(resourceName: "bar"),#imageLiteral(resourceName: "cafe"),#imageLiteral(resourceName: "restaurant"),#imageLiteral(resourceName: "bank"),#imageLiteral(resourceName: "night_club"),#imageLiteral(resourceName: "museum"),#imageLiteral(resourceName: "beauty_salon"),#imageLiteral(resourceName: "pharmacy"),#imageLiteral(resourceName: "hospital"),#imageLiteral(resourceName: "bus_station"),#imageLiteral(resourceName: "gas_station"),#imageLiteral(resourceName: "university"),#imageLiteral(resourceName: "police"),#imageLiteral(resourceName: "church"),#imageLiteral(resourceName: "cemetery"),#imageLiteral(resourceName: "park"),#imageLiteral(resourceName: "gym")]
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
