@@ -35,7 +35,7 @@
 		2BDB159C1FD06D0C00C32F81 /* DetailPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDB159A1FD06D0C00C32F81 /* DetailPlaceViewController.swift */; };
 		493649071FD0646B00C95EDC /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493649061FD0646B00C95EDC /* NotificationCenter.framework */; };
 		4936490A1FD0646B00C95EDC /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493649091FD0646B00C95EDC /* TodayViewController.swift */; };
-		493649111FD0646B00C95EDC /* Places In Current Location.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 493649051FD0646B00C95EDC /* Places In Current Location.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		493649111FD0646B00C95EDC /* RightHere In Current Location.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 493649051FD0646B00C95EDC /* RightHere In Current Location.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		493649191FD064C700C95EDC /* TodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493649181FD064C700C95EDC /* TodayTableViewCell.swift */; };
 		49634E051FD84FD500188499 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49634E041FD84FD500188499 /* Media.xcassets */; };
 		49D395C11FCD85A8003FCC29 /* SlideMenuActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D395C01FCD85A8003FCC29 /* SlideMenuActionButton.swift */; };
@@ -118,7 +118,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				493649111FD0646B00C95EDC /* Places In Current Location.appex in Embed App Extensions */,
+				493649111FD0646B00C95EDC /* RightHere In Current Location.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,7 +160,7 @@
 		2B8608051FCC4DB10007B777 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		2BCDF2351FC8481B00EA96F0 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		2BDB159A1FD06D0C00C32F81 /* DetailPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPlaceViewController.swift; sourceTree = "<group>"; };
-		493649051FD0646B00C95EDC /* Places In Current Location.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Places In Current Location.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		493649051FD0646B00C95EDC /* RightHere In Current Location.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RightHere In Current Location.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		493649061FD0646B00C95EDC /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		493649091FD0646B00C95EDC /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		4936490E1FD0646B00C95EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -224,7 +224,7 @@
 		8A6884811FE0326F0097DD22 /* SettingPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPassword.swift; sourceTree = "<group>"; };
 		8A6884831FE034AF0097DD22 /* SettingEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingEmail.swift; sourceTree = "<group>"; };
 		8A6884851FE036F00097DD22 /* CheckIfUserLogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIfUserLogIn.swift; sourceTree = "<group>"; };
-		8A8C5C721FC57F3E00A834EA /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A8C5C721FC57F3E00A834EA /* RightHere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RightHere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8C5C751FC57F3E00A834EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A8C5C771FC57F3E00A834EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8A8C5C7A1FC57F3E00A834EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -524,8 +524,8 @@
 		8A8C5C731FC57F3E00A834EA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A8C5C721FC57F3E00A834EA /* Places.app */,
-				493649051FD0646B00C95EDC /* Places In Current Location.appex */,
+				8A8C5C721FC57F3E00A834EA /* RightHere.app */,
+				493649051FD0646B00C95EDC /* RightHere In Current Location.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -605,9 +605,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		493649041FD0646B00C95EDC /* Places In Current Location */ = {
+		493649041FD0646B00C95EDC /* RightHere In Current Location */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 493649141FD0646B00C95EDC /* Build configuration list for PBXNativeTarget "Places In Current Location" */;
+			buildConfigurationList = 493649141FD0646B00C95EDC /* Build configuration list for PBXNativeTarget "RightHere In Current Location" */;
 			buildPhases = (
 				493649011FD0646B00C95EDC /* Sources */,
 				493649021FD0646B00C95EDC /* Frameworks */,
@@ -617,14 +617,14 @@
 			);
 			dependencies = (
 			);
-			name = "Places In Current Location";
+			name = "RightHere In Current Location";
 			productName = "Places In Current Location";
-			productReference = 493649051FD0646B00C95EDC /* Places In Current Location.appex */;
+			productReference = 493649051FD0646B00C95EDC /* RightHere In Current Location.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		8A8C5C711FC57F3E00A834EA /* Places */ = {
+		8A8C5C711FC57F3E00A834EA /* RightHere */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A8C5C841FC57F3E00A834EA /* Build configuration list for PBXNativeTarget "Places" */;
+			buildConfigurationList = 8A8C5C841FC57F3E00A834EA /* Build configuration list for PBXNativeTarget "RightHere" */;
 			buildPhases = (
 				A44925F1985245B4F5D4F344 /* [CP] Check Pods Manifest.lock */,
 				8A8C5C6E1FC57F3E00A834EA /* Sources */,
@@ -639,9 +639,9 @@
 			dependencies = (
 				493649101FD0646B00C95EDC /* PBXTargetDependency */,
 			);
-			name = Places;
+			name = RightHere;
 			productName = Places;
-			productReference = 8A8C5C721FC57F3E00A834EA /* Places.app */;
+			productReference = 8A8C5C721FC57F3E00A834EA /* RightHere.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -675,7 +675,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8A8C5C6D1FC57F3E00A834EA /* Build configuration list for PBXProject "Places" */;
+			buildConfigurationList = 8A8C5C6D1FC57F3E00A834EA /* Build configuration list for PBXProject "RightHere" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -689,8 +689,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8A8C5C711FC57F3E00A834EA /* Places */,
-				493649041FD0646B00C95EDC /* Places In Current Location */,
+				8A8C5C711FC57F3E00A834EA /* RightHere */,
+				493649041FD0646B00C95EDC /* RightHere In Current Location */,
 			);
 		};
 /* End PBXProject section */
@@ -888,7 +888,7 @@
 /* Begin PBXTargetDependency section */
 		493649101FD0646B00C95EDC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 493649041FD0646B00C95EDC /* Places In Current Location */;
+			target = 493649041FD0646B00C95EDC /* RightHere In Current Location */;
 			targetProxy = 4936490F1FD0646B00C95EDC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1160,11 +1160,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Places/Places.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = U3WC8HAXW5;
 				INFOPLIST_FILE = Places/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.Places";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viktoria.rohozhyna.RightHere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -1181,11 +1181,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Places/Places.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = U3WC8HAXW5;
 				INFOPLIST_FILE = Places/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.Places";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viktoria.rohozhyna.RightHere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1195,7 +1195,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		493649141FD0646B00C95EDC /* Build configuration list for PBXNativeTarget "Places In Current Location" */ = {
+		493649141FD0646B00C95EDC /* Build configuration list for PBXNativeTarget "RightHere In Current Location" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				493649121FD0646B00C95EDC /* Debug */,
@@ -1204,7 +1204,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A8C5C6D1FC57F3E00A834EA /* Build configuration list for PBXProject "Places" */ = {
+		8A8C5C6D1FC57F3E00A834EA /* Build configuration list for PBXProject "RightHere" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A8C5C821FC57F3E00A834EA /* Debug */,
@@ -1213,7 +1213,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A8C5C841FC57F3E00A834EA /* Build configuration list for PBXNativeTarget "Places" */ = {
+		8A8C5C841FC57F3E00A834EA /* Build configuration list for PBXNativeTarget "RightHere" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A8C5C851FC57F3E00A834EA /* Debug */,
