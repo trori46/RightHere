@@ -432,29 +432,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         return UIColor(red: val, green: 1.0, blue: 0.8, alpha: 0.7)
     }
     
-    /////////////////////////////////////////////////////////////////////////
-    
-    
-    var nameFilterArray = [ NSLocalizedString("Bar", comment: ""),
-                            NSLocalizedString("Cafe", comment: ""),
-                            NSLocalizedString("Restaurant", comment: ""),
-                            NSLocalizedString("Bank", comment: ""),
-                            NSLocalizedString("Night Club", comment: ""),
-                            NSLocalizedString("Museum", comment: ""),
-                            NSLocalizedString("Beauty Salon", comment: ""),
-                            NSLocalizedString("Pharmacy", comment: ""),
-                            NSLocalizedString("Hospital", comment: ""),
-                            NSLocalizedString("Bus Station", comment: ""),
-                            NSLocalizedString("Gas Station", comment: ""),
-                            NSLocalizedString("University", comment: ""),
-                            NSLocalizedString("Police", comment: ""),
-                            NSLocalizedString("Church", comment: ""),
-                            NSLocalizedString("Cemetery", comment: ""),
-                            NSLocalizedString("Park", comment: ""),
-                            NSLocalizedString("Gym", comment: "")]
+    var nameFilterArray = [ "Bar", "Cafe", "Restaurant", "Bank", "Night Club", "Museum", "Beauty Salon", "Pharmacy", "Hospital", "Bus Station", "Gas Station", "University", "Police", "Church", "Cemetery", "Park", "Gym"]
     let iconFilterArray = [#imageLiteral(resourceName: "bar"),#imageLiteral(resourceName: "cafe"),#imageLiteral(resourceName: "restaurant"),#imageLiteral(resourceName: "bank"),#imageLiteral(resourceName: "nightClub"),#imageLiteral(resourceName: "museum"),#imageLiteral(resourceName: "beutySalon"),#imageLiteral(resourceName: "pharmacy"),#imageLiteral(resourceName: "hospital"),#imageLiteral(resourceName: "busStation"),#imageLiteral(resourceName: "gasStation"),#imageLiteral(resourceName: "university"),#imageLiteral(resourceName: "police"),#imageLiteral(resourceName: "church"),#imageLiteral(resourceName: "cemetery"),#imageLiteral(resourceName: "park"),#imageLiteral(resourceName: "gym")]
-    
-    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -471,7 +450,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         if selectedCell.contains(indexPath.row) {
             accessory = .checkmark
         }
-        filterCell.nameFilter.text = nameFilterArray[indexPath.row]
+        filterCell.nameFilter.text = NSLocalizedString(nameFilterArray[indexPath.row], comment: "")
         filterCell.iconFilter.image = iconFilterArray[indexPath.row]
         filterCell.backgroundColor = colorForIndex(index: indexPath.row)
         filterCell.accessoryType = accessory
