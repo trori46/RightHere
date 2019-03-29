@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "icons8-telephone-100.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "icon-phone.png",
       "scale" : "2x"
     },
     {
@@ -19,6 +19,6 @@
     "author" : "xcode"
   },
   "properties" : {
-    "template-rendering-intent" : "original"
+    "template-rendering-intent" : "template"
   }
 }

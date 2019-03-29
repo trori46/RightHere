@@ -137,7 +137,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if let cell = tableView.dequeueReusableCell(withIdentifier: "listTableView", for: indexPath) as? ListTableViewCell {
             let place = (filterOpenOnly) ? openPlaces[safe: indexPath.row] : places[safe: indexPath.row]
             // image
-            cell.thumbnailImageView.image = place?.icon
+            cell.thumbnailImageView.image = place?.photo
             //name
             cell.name.text = place?.name
             //distance
