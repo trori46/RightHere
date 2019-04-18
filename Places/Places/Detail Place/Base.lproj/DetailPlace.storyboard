@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Je1-fC-mgn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Je1-fC-mgn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -106,7 +106,7 @@
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FYY-uH-e9T">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="245"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.2274509804" green="0.67843137249999996" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" id="bqE-C3-cef"/>
                                         </constraints>
@@ -151,7 +151,7 @@
                                         </connections>
                                     </collectionView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OeB-a3-OS7" userLabel="Feedback Table View">
-                                        <rect key="frame" x="0.0" y="631" width="375" height="121"/>
+                                        <rect key="frame" x="0.0" y="647" width="375" height="121"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="121" id="dJ7-X1-pyT"/>
@@ -288,7 +288,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="62.5" height="47"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unknown.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="LHx-HL-zNF" customClass="UIImageViewExplicit" customModule="RightHere" customModuleProvider="target">
-                                                                <rect key="frame" x="6.5" y="-1.5" width="50" height="50"/>
+                                                                <rect key="frame" x="15.5" y="7.5" width="31.5" height="31.5"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <color key="tintColor" red="0.92119914290000005" green="0.2922174931" blue="0.43170982600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
@@ -309,7 +309,7 @@
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
-                                                            <constraint firstItem="LHx-HL-zNF" firstAttribute="width" secondItem="uV8-Q2-LuJ" secondAttribute="width" multiplier="0.8" id="7go-fG-4we"/>
+                                                            <constraint firstItem="LHx-HL-zNF" firstAttribute="width" secondItem="uV8-Q2-LuJ" secondAttribute="width" multiplier="0.5" id="7go-fG-4we"/>
                                                             <constraint firstItem="LHx-HL-zNF" firstAttribute="centerY" secondItem="uV8-Q2-LuJ" secondAttribute="centerY" id="B1Z-3a-OEu"/>
                                                             <constraint firstItem="LHx-HL-zNF" firstAttribute="centerX" secondItem="uV8-Q2-LuJ" secondAttribute="centerX" id="LRP-4a-J7O"/>
                                                         </constraints>
@@ -339,8 +339,8 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clm-m0-aWb" userLabel="Common View">
                                                         <rect key="frame" x="0.0" y="0.0" width="62.5" height="46.5"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home64" translatesAutoresizingMaskIntoConstraints="NO" id="GQe-5R-O4z" customClass="UIImageViewExplicit" customModule="RightHere" customModuleProvider="target">
-                                                                <rect key="frame" x="6.5" y="-2" width="50" height="50"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-address" translatesAutoresizingMaskIntoConstraints="NO" id="GQe-5R-O4z" customClass="UIImageViewExplicit" customModule="RightHere" customModuleProvider="target">
+                                                                <rect key="frame" x="15.5" y="7.5" width="31.5" height="31.5"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <color key="tintColor" red="0.92119914290000005" green="0.2922174931" blue="0.43170982600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
@@ -362,7 +362,7 @@
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstItem="GQe-5R-O4z" firstAttribute="centerY" secondItem="clm-m0-aWb" secondAttribute="centerY" id="6QV-ek-rdc"/>
-                                                            <constraint firstItem="GQe-5R-O4z" firstAttribute="width" secondItem="clm-m0-aWb" secondAttribute="width" multiplier="0.8" id="LHA-ah-Dwx"/>
+                                                            <constraint firstItem="GQe-5R-O4z" firstAttribute="width" secondItem="clm-m0-aWb" secondAttribute="width" multiplier="0.5" id="LHA-ah-Dwx"/>
                                                             <constraint firstItem="GQe-5R-O4z" firstAttribute="centerX" secondItem="clm-m0-aWb" secondAttribute="centerX" id="kXJ-Xz-TCQ"/>
                                                         </constraints>
                                                     </view>
@@ -391,8 +391,8 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1j-xQ-coL" userLabel="Common View">
                                                         <rect key="frame" x="0.0" y="0.0" width="62.5" height="47"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="g6r-uL-hXx" customClass="UIImageViewExplicit" customModule="RightHere" customModuleProvider="target">
-                                                                <rect key="frame" x="6.5" y="-1.5" width="50" height="50"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-clock" translatesAutoresizingMaskIntoConstraints="NO" id="g6r-uL-hXx" customClass="UIImageViewExplicit" customModule="RightHere" customModuleProvider="target">
+                                                                <rect key="frame" x="15.5" y="8" width="31.5" height="31"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <color key="tintColor" red="0.92119914290000005" green="0.2922174931" blue="0.43170982600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
@@ -415,7 +415,7 @@
                                                         <constraints>
                                                             <constraint firstItem="g6r-uL-hXx" firstAttribute="centerX" secondItem="M1j-xQ-coL" secondAttribute="centerX" id="FMo-qJ-Qmm"/>
                                                             <constraint firstItem="g6r-uL-hXx" firstAttribute="centerY" secondItem="M1j-xQ-coL" secondAttribute="centerY" id="LG6-vR-Pqv"/>
-                                                            <constraint firstItem="g6r-uL-hXx" firstAttribute="width" secondItem="M1j-xQ-coL" secondAttribute="width" multiplier="0.8" id="vJG-tP-yrL"/>
+                                                            <constraint firstItem="g6r-uL-hXx" firstAttribute="width" secondItem="M1j-xQ-coL" secondAttribute="width" multiplier="0.5" id="vJG-tP-yrL"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6o-yA-VcF">
@@ -500,7 +500,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="62.5" height="47"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone32" translatesAutoresizingMaskIntoConstraints="NO" id="8DY-8s-feg" customClass="UIImageViewExplicit" customModule="RightHere" customModuleProvider="target">
-                                                                <rect key="frame" x="6.5" y="-1.5" width="50" height="50"/>
+                                                                <rect key="frame" x="15.5" y="8" width="31.5" height="31"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <color key="tintColor" red="0.92119914290000005" green="0.2922174931" blue="0.43170982600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
@@ -521,7 +521,7 @@
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
-                                                            <constraint firstItem="8DY-8s-feg" firstAttribute="width" secondItem="Nrv-UE-1CJ" secondAttribute="width" multiplier="0.8" id="D6d-Dy-aDA"/>
+                                                            <constraint firstItem="8DY-8s-feg" firstAttribute="width" secondItem="Nrv-UE-1CJ" secondAttribute="width" multiplier="0.5" id="D6d-Dy-aDA"/>
                                                             <constraint firstItem="8DY-8s-feg" firstAttribute="centerY" secondItem="Nrv-UE-1CJ" secondAttribute="centerY" id="olh-xy-a25"/>
                                                             <constraint firstItem="8DY-8s-feg" firstAttribute="centerX" secondItem="Nrv-UE-1CJ" secondAttribute="centerX" id="rzt-u3-g3n"/>
                                                         </constraints>
@@ -552,7 +552,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="62.5" height="47"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="website64" translatesAutoresizingMaskIntoConstraints="NO" id="K4D-KV-v2p" customClass="UIImageViewExplicit" customModule="RightHere" customModuleProvider="target">
-                                                                <rect key="frame" x="6.5" y="-1.5" width="50" height="50"/>
+                                                                <rect key="frame" x="15.5" y="7.5" width="31.5" height="31.5"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <color key="tintColor" red="0.92119914290000005" green="0.2922174931" blue="0.43170982600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
@@ -573,7 +573,7 @@
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
-                                                            <constraint firstItem="K4D-KV-v2p" firstAttribute="width" secondItem="FEg-F1-cH7" secondAttribute="width" multiplier="0.8" id="Uo3-g7-JTa"/>
+                                                            <constraint firstItem="K4D-KV-v2p" firstAttribute="width" secondItem="FEg-F1-cH7" secondAttribute="width" multiplier="0.5" id="Uo3-g7-JTa"/>
                                                             <constraint firstItem="K4D-KV-v2p" firstAttribute="centerY" secondItem="FEg-F1-cH7" secondAttribute="centerY" id="kgb-1u-ao5"/>
                                                             <constraint firstItem="K4D-KV-v2p" firstAttribute="centerX" secondItem="FEg-F1-cH7" secondAttribute="centerX" id="y7m-UH-fJj"/>
                                                         </constraints>
@@ -663,7 +663,7 @@
                                     <constraint firstItem="FYY-uH-e9T" firstAttribute="height" secondItem="Op3-an-sx1" secondAttribute="height" multiplier="0.3" id="XLt-g4-NUK"/>
                                     <constraint firstItem="FYY-uH-e9T" firstAttribute="leading" secondItem="Op3-an-sx1" secondAttribute="leading" id="b6e-m7-gds"/>
                                     <constraint firstAttribute="trailing" secondItem="OeB-a3-OS7" secondAttribute="trailing" id="fo6-hb-HSc"/>
-                                    <constraint firstItem="OeB-a3-OS7" firstAttribute="top" secondItem="KYB-9b-9aW" secondAttribute="bottom" id="my8-zA-F1f"/>
+                                    <constraint firstItem="OeB-a3-OS7" firstAttribute="top" secondItem="KYB-9b-9aW" secondAttribute="bottom" constant="16" id="my8-zA-F1f"/>
                                     <constraint firstItem="FYY-uH-e9T" firstAttribute="top" secondItem="Op3-an-sx1" secondAttribute="top" id="rNK-zF-KU2"/>
                                     <constraint firstAttribute="trailing" secondItem="FYY-uH-e9T" secondAttribute="trailing" id="zLs-oc-Ep7"/>
                                 </constraints>
@@ -749,7 +749,7 @@
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZDN-i6-Ylp" userLabel="Current Photo Collection View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.29411764709999999" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="7z1-Rq-gwv">
                                             <size key="itemSize" width="370" height="640"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -783,7 +783,7 @@
                                         </cells>
                                     </collectionView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.29411764709999999" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="ZDN-i6-Ylp" secondAttribute="bottom" id="JEC-Qf-YxL"/>
                                     <constraint firstItem="ZDN-i6-Ylp" firstAttribute="top" secondItem="fCN-6U-eEc" secondAttribute="top" id="VDS-pm-Fue"/>
@@ -794,12 +794,12 @@
                             </view>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exP-nQ-jbD">
                                 <rect key="frame" x="295" y="587" width="60" height="60"/>
-                                <color key="backgroundColor" red="0.92119914290000005" green="0.2922174931" blue="0.43170982600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="9dc-w7-GbX"/>
                                     <constraint firstAttribute="width" constant="60" id="ws0-bQ-zAU"/>
                                 </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.92156862750000001" green="0.29411764709999999" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="211602-64">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -843,16 +843,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="115801-64" width="64" height="64"/>
-        <image name="211602-64" width="64" height="64"/>
+        <image name="115801-64" width="32" height="32"/>
+        <image name="211602-64" width="32" height="32"/>
         <image name="Unknown.jpeg" width="275" height="183"/>
-        <image name="clock" width="12" height="12"/>
-        <image name="home64" width="12" height="12"/>
-        <image name="infoTime32" width="25.600000381469727" height="25.600000381469727"/>
-        <image name="path" width="37.5" height="37.5"/>
-        <image name="phone32" width="75" height="75"/>
-        <image name="share" width="37.5" height="37.5"/>
-        <image name="website32" width="37.5" height="37.5"/>
-        <image name="website64" width="37.5" height="37.5"/>
+        <image name="icon-address" width="25" height="25"/>
+        <image name="icon-clock" width="25" height="25"/>
+        <image name="infoTime32" width="16" height="16"/>
+        <image name="path" width="25" height="25"/>
+        <image name="phone32" width="25" height="25"/>
+        <image name="share" width="25" height="25"/>
+        <image name="website32" width="25" height="25"/>
+        <image name="website64" width="25" height="25"/>
     </resources>
 </document>

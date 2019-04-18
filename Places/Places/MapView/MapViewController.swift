@@ -26,7 +26,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     var region: MKCoordinateRegion?
     var menu = ViewController()
     let mapDynamic = Dynamic()
-    //    var menuIsOpen = false
     private let transition = CustomTransitionAnimator()
     weak var delegate: SlashScreenDelegate?
     
@@ -52,7 +51,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     @IBOutlet weak var profileButton: UIButton!
     @IBOutlet weak var sideMenuConstraint: NSLayoutConstraint!
     var isSideMenuHidden = true
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,7 +98,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
     }
     
-    
     func changeMapType() {
         map.delegate = self
         map.showsPointsOfInterest = false
@@ -137,11 +134,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         }
     }
     
-    
     func updateData() {
-
+        
         _ = loadVC.customActivityIndicatory(self.view, startAnimate: true)
-
+        
         let center = CLLocationCoordinate2D(latitude: pressCoordinate.latitude, longitude: pressCoordinate.longitude)
         
         googlePlacesManager = GooglePlacesManager(
@@ -155,9 +151,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                     self.showAlert(message: "Cannot load all places! Try it tomorrow ;)")
                     
                     DispatchQueue.main.sync {
-
+                        
                         _ = loadVC.customActivityIndicatory(self.view, startAnimate: false)
-
+                        
                         self.addCurrentLocation(coords: center)
                     }
                 }
@@ -166,16 +162,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                     DispatchQueue.main.sync {
                         self.addAnnotations(coords: self.places)
                         self.addCurrentLocation(coords: center)
-                        loadVC.customActivityIndicatory(self.view, startAnimate: false)
+                        _ = loadVC.customActivityIndicatory(self.view, startAnimate: false)
                         self.delegate?.splashScreen()
-
+                        
                     }
                 }
         })
         changeMapType()
-//        self.delegate?.splashScreen()
     }
-    
     
     @IBAction func showSideMenu(_ sender: UIButton) {
         if isSideMenuHidden {
@@ -548,10 +542,4 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         }
         return transition
     }
-    
 }
-
-
-
-
-

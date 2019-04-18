@@ -21,7 +21,6 @@ class PhotoPagingViewController: UIViewController,UICollectionViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         dismissButtonOutlet.transform = CGAffineTransform(rotationAngle: 45 * (.pi / 180))
-        dismissButtonOutlet.backgroundColor = #colorLiteral(red: 0.8338858485, green: 0.2595152557, blue: 0.3878593445, alpha: 1)
         currentPhotoCollectionView.delegate = self
         currentPhotoCollectionView.dataSource = self
     }

@@ -5,12 +5,10 @@
 //  Created by andriibilan on 11/22/17.
 //  Copyright © 2017 andriibilan. All rights reserved.
 //
-
 import UIKit
 import Firebase
 
 class ViewController: UIViewController,UIViewControllerTransitioningDelegate, SlashScreenDelegate {
-
     var map : MapViewController?
     var listObj : ListViewController?
     
@@ -55,8 +53,6 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate, Sl
 		}
 		
 	}
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -131,7 +127,6 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate, Sl
         }
     }
 	
-	
 	//MARK:- Custom Transition
 	func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
 		transition.transitionMode = .present
@@ -168,8 +163,6 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate, Sl
 			secondVC.modalPresentationStyle = .custom
 		}
 
-		
-		
 		if segue.identifier == "ShowLogin" {
 			let secondVC = segue.destination as! LoginViewController
 			secondVC.transitioningDelegate = self
@@ -177,14 +170,11 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate, Sl
 		}
         if segue.identifier == "MapView" {
             map = segue.destination as? MapViewController
-//            let mapVC = segue.destination as? MapViewController
-//            mapVC?.delegate = self
             map?.delegate = self
         }
         if segue.identifier == "ListView" {
            listObj = segue.destination as? ListViewController
         }
-        
 	}
     
     @IBAction func unwindFromSettings(segue: UIStoryboardSegue) {
@@ -207,4 +197,3 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate, Sl
 protocol OutputInterface {
     func updateData()
 }
-

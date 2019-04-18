@@ -33,7 +33,7 @@ extension GooglePlacesManager{
                     }
                     
                     do{
-                        jsonPlaceRequest // used for debuging
+                       // jsonPlaceRequest // used for debuging
                         
                         let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
                         let dictionary = json as! [String: Any]
