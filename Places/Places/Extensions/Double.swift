@@ -2,8 +2,8 @@
 //  Extension for Double.swift
 //  Places
 //
-//  Created by Andrii Antoniak on 11/24/17.
-//  Copyright © 2017 andriibilan. All rights reserved.
+//  Created by Victoriia Rohozhyna on 11/24/17.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 
 import Foundation

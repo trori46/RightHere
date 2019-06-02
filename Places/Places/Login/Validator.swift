@@ -2,8 +2,8 @@
 //  Validator.swift
 //  Places
 //
-//  Created by Yurii Vients on 11/23/17.
-//  Copyright © 2017 andriibilan. All rights reserved.
+//  Created by Victoriia Rohozhyna on 11/23/17.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 
 import Foundation

@@ -2,8 +2,8 @@
 //  TableViewDataSource.swift
 //  Places
 //
-//  Created by Andrii Antoniak on 12/7/17.
-//  Copyright © 2017 andriibilan. All rights reserved.
+//  Created by Victoriia Rohozhyna on 12/7/17.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 
 import Foundation
@@ -18,8 +18,8 @@ extension DetailPlaceViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let review = place.reviews[indexPath.row]
         let cell  = feedbackTableView.dequeueReusableCell(withIdentifier: "reviewCell", for: indexPath) as! ReviewTableViewCell
-        cell.layer.borderColor = #colorLiteral(red: 0.2275260389, green: 0.6791594625, blue: 0.5494497418, alpha: 1)
-        cell.layer.borderWidth = 2
+        //cell.layer.borderColor = #colorLiteral(red: 0.2275260389, green: 0.6791594625, blue: 0.5494497418, alpha: 1)
+        //cell.layer.borderWidth = 2
         cell.labelForReview?.text = review.text
         cell.labelForReview?.backgroundColor? = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         //cell.labelForReview?.textColor = #colorLiteral(red: 0.9211991429, green: 0.2922174931, blue: 0.431709826, alpha: 1)

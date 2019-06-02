@@ -47,7 +47,7 @@
 		521CFD741FCCCE3800CD86DD /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521CFD731FCCCE3800CD86DD /* UIImage.swift */; };
 		524301311FD6B3AA002C613D /* Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524301301FD6B3AA002C613D /* Load.swift */; };
 		524301331FD6F2A3002C613D /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524301321FD6F2A3002C613D /* LaunchScreenController.swift */; };
-		528825AA1FCEF53700C29BFE /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505B9A11FCEE9D500415051 /* SearchVC.swift */; };
+		528825AA1FCEF53700C29BFE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505B9A11FCEE9D500415051 /* SearchViewController.swift */; };
 		528825AB1FCEF53A00C29BFE /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505B99F1FCEE9D500415051 /* ItemCell.swift */; };
 		528825AE1FCEF54B00C29BFE /* UITableViewExplicit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505B9881FCEE9D500415051 /* UITableViewExplicit.swift */; };
 		528825AF1FCEF54E00C29BFE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505B98A1FCEE9D500415051 /* Location.swift */; };
@@ -81,6 +81,7 @@
 		75F7EB761FC59B84002F169E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F7EB751FC59B84002F169E /* SignUpViewController.swift */; };
 		75F7EB791FC59E96002F169E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F7EB781FC59E96002F169E /* ProfileViewController.swift */; };
 		75F7EB831FC5A8AD002F169E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75F7EB821FC5A8AD002F169E /* GoogleService-Info.plist */; };
+		782E198022A3B73700AE6988 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 782E197E22A3B73700AE6988 /* CoreDataModel.xcdatamodeld */; };
 		8A6884821FE0326F0097DD22 /* SettingPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6884811FE0326F0097DD22 /* SettingPassword.swift */; };
 		8A6884841FE034AF0097DD22 /* SettingEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6884831FE034AF0097DD22 /* SettingEmail.swift */; };
 		8A6884861FE036F00097DD22 /* CheckIfUserLogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6884851FE036F00097DD22 /* CheckIfUserLogIn.swift */; };
@@ -137,8 +138,8 @@
 		2505B98D1FCEE9D500415051 /* PlaceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceType.swift; sourceTree = "<group>"; };
 		2505B9901FCEE9D500415051 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		2505B99F1FCEE9D500415051 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
-		2505B9A11FCEE9D500415051 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
-		25316AE31FCDB52B00CE29DE /* phoneFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneFormatter.swift; sourceTree = "<group>"; };
+		2505B9A11FCEE9D500415051 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		25316AE31FCDB52B00CE29DE /* phoneFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = phoneFormatter.swift; path = ../AddPlace/phoneFormatter.swift; sourceTree = "<group>"; };
 		25316AE51FCDB77E00CE29DE /* lviv2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lviv2.jpg; sourceTree = "<group>"; };
 		25316AE71FCDB80A00CE29DE /* add.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = add.jpg; sourceTree = "<group>"; };
 		25316AE91FCDBA4800CE29DE /* down.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = down.jpg; sourceTree = "<group>"; };
@@ -221,6 +222,7 @@
 		75F7EB751FC59B84002F169E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		75F7EB781FC59E96002F169E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		75F7EB821FC5A8AD002F169E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		782E197F22A3B73700AE6988 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		8A6884811FE0326F0097DD22 /* SettingPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPassword.swift; sourceTree = "<group>"; };
 		8A6884831FE034AF0097DD22 /* SettingEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingEmail.swift; sourceTree = "<group>"; };
 		8A6884851FE036F00097DD22 /* CheckIfUserLogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIfUserLogIn.swift; sourceTree = "<group>"; };
@@ -278,7 +280,7 @@
 			children = (
 				2505B99F1FCEE9D500415051 /* ItemCell.swift */,
 				75554F131FED0B50002A670A /* Search.storyboard */,
-				2505B9A11FCEE9D500415051 /* SearchVC.swift */,
+				2505B9A11FCEE9D500415051 /* SearchViewController.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -307,7 +309,6 @@
 			children = (
 				75554F1A1FED0B88002A670A /* NewPlaceBoard.storyboard */,
 				25316AED1FCDBC6800CE29DE /* CategoriesViewCell.swift */,
-				25316AE31FCDB52B00CE29DE /* phoneFormatter.swift */,
 				25316AEB1FCDBC2500CE29DE /* DlistViewController.swift */,
 				257391101FD56BE5001A9BBD /* cancel.png */,
 				25316AE51FCDB77E00CE29DE /* lviv2.jpg */,
@@ -365,6 +366,7 @@
 		2BCDF2341FC847ED00EA96F0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				25316AE31FCDB52B00CE29DE /* phoneFormatter.swift */,
 				2505B9901FCEE9D500415051 /* Int.swift */,
 				2BCDF2351FC8481B00EA96F0 /* Double.swift */,
 				8A9C7C7A1FCB371A009B9C86 /* UIView.swift */,
@@ -493,6 +495,7 @@
 				757042231FCB09620075FC87 /* User.swift */,
 				757042251FCB097B0075FC87 /* AuthService.swift */,
 				75554F211FED0BA7002A670A /* Login.storyboard */,
+				782E197E22A3B73700AE6988 /* CoreDataModel.xcdatamodeld */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -817,13 +820,14 @@
 			files = (
 				75F7EB791FC59E96002F169E /* ProfileViewController.swift in Sources */,
 				5291916B1FCC1E02008FD5AB /* myAnnotation.swift in Sources */,
+				782E198022A3B73700AE6988 /* CoreDataModel.xcdatamodeld in Sources */,
 				7510D9711FCD77A9004B83CD /* AvatarImageView.swift in Sources */,
 				21FEF2521FD6D17600DF5A40 /* Static Methods.swift in Sources */,
 				258B065A1FC861D6003A09B8 /* AddNewPlaceController.swift in Sources */,
 				2B3920FB1FE2D4A70061BEFE /* ExtensionListViewTransitioningDelegate.swift in Sources */,
 				49E3C0091FC6D18E00400A06 /* UIButtonExplicit.swift in Sources */,
 				2BDB159C1FD06D0C00C32F81 /* DetailPlaceViewController.swift in Sources */,
-				528825AA1FCEF53700C29BFE /* SearchVC.swift in Sources */,
+				528825AA1FCEF53700C29BFE /* SearchViewController.swift in Sources */,
 				528825AE1FCEF54B00C29BFE /* UITableViewExplicit.swift in Sources */,
 				8A6884821FE0326F0097DD22 /* SettingPassword.swift in Sources */,
 				528825CF1FCF0EA400C29BFE /* FetchAdditionalData.swift in Sources */,
@@ -1223,6 +1227,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		782E197E22A3B73700AE6988 /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				782E197F22A3B73700AE6988 /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 782E197F22A3B73700AE6988 /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8A8C5C6A1FC57F3E00A834EA /* Project object */;
 }

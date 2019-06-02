@@ -2,8 +2,8 @@
 //  ProfileViewController.swift
 //  Places
 //
-//  Created by Yurii Vients on 11/22/17.
-//  Copyright © 2017 andriibilan. All rights reserved.
+//  Created by Victoriia Rohozhyna on 11/22/17.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 
 import UIKit
@@ -53,10 +53,8 @@ class ProfileViewController: UIViewController, UIViewControllerTransitioningDele
         self.hideKeyboardOnTap(#selector(self.dismissKeyboard))
     }
     
-    
     override func viewDidAppear(_ animated: Bool) {
         // Header - Blurred Image
-        
         headerBlurImageView = UIImageView(frame: header.bounds)
         headerImageView?.image = UIImage(named: "lviv")
         blurEffectView = UIVisualEffectView(effect: blurEffect)
@@ -81,7 +79,6 @@ class ProfileViewController: UIViewController, UIViewControllerTransitioningDele
         return UIStatusBarStyle.lightContent
     }
     
-    
     func getProfileData() {
         ref.child("Users").child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
             
@@ -90,7 +87,7 @@ class ProfileViewController: UIViewController, UIViewControllerTransitioningDele
             self.nameTextField.text = user.firstName
             self.headerLabel.text = user.firstName
             self.phoneTextField.text = user.phone
-            let profileImageURL = user.ImageUrl
+            let profileImageURL = user.imageUrl
             
             let url = URL(string: profileImageURL!)
             let data = try? Data(contentsOf: url!)
@@ -101,13 +98,11 @@ class ProfileViewController: UIViewController, UIViewControllerTransitioningDele
         })
     }
     
-    
     func alertAction(_ message: String) {
         let alertMessage = UIAlertController(title: "Oops!", message: message , preferredStyle: .alert)
         alertMessage.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
         present(alertMessage, animated: true, completion: nil)
     }
-    
     
     @IBAction func logOutButton(_ sender: Any) {
         if Auth.auth().currentUser != nil {
@@ -137,7 +132,6 @@ class ProfileViewController: UIViewController, UIViewControllerTransitioningDele
         
         authService.updateUserInfo(userName: nameTextField.text!, email: emailTextField.text!, phone: phoneTextField.text!, profileImage: nil)
         performSegue(withIdentifier: "unwindFromProfile", sender: self)
-        
     }
     
     @IBAction func chooseImage(_ sender: Any) {
@@ -187,7 +181,7 @@ extension ProfileViewController : UIImagePickerControllerDelegate, UINavigationC
         
         actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action: UIAlertAction) in
             
-            if UIImagePickerController.isSourceTypeAvailable(.camera){
+            if UIImagePickerController.isSourceTypeAvailable(.camera) {
                 imagePickerController.sourceType = .camera
                 self.present(imagePickerController, animated: true, completion: nil)
             } else {
@@ -266,7 +260,6 @@ extension ProfileViewController:  UIScrollViewDelegate {
                 }
             }
         }
-        
         // Apply Transformations
         header.layer.transform = headerTransform
         profileImage.layer.transform = avatarTransform
@@ -294,10 +287,8 @@ extension ProfileViewController: UITextFieldDelegate {
             let characterSet = CharacterSet(charactersIn: string)
             let inputNumber = textField.text
             
-            if (inputNumber?.count)! < 19
-            {
+            if (inputNumber?.count)! < 19 {
                 phoneTextField.text = formatter.formatPhoneNumber(inputNumber!)
-                
             } else {
                 let newLength = (inputNumber?.count)! + string.count - range.length
                 return newLength <= 19
@@ -309,5 +300,3 @@ extension ProfileViewController: UITextFieldDelegate {
         return true
     }
 }
-
-

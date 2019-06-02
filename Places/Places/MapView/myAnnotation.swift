@@ -3,7 +3,7 @@
 //  Places
 //
 //  Created by Victoriia Rohozhyna on 11/27/17.
-//  Copyright © 2017 andriibilan. All rights reserved.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 
 import UIKit

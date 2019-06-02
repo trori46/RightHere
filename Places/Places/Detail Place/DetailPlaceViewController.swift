@@ -2,8 +2,8 @@
 //  DetailPlaceViewController.swift
 //  Places
 //
-//  Created by Andrii Antoniak on 11/22/17.
-//  Copyright © 2017 andriibilan. All rights reserved.
+//  Created by Victoriia Rohozhyna on 11/22/17.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 
 import UIKit
@@ -75,10 +75,6 @@ class DetailPlaceViewController: UIViewController, UITableViewDelegate {
     
     var mapView : MKMapView!
     
-    
-    
-    
-    //
     @IBOutlet weak var clockInfo: UIButton!
     
     @IBOutlet weak var scheduleTimeLabel: UILabel!
@@ -97,7 +93,6 @@ class DetailPlaceViewController: UIViewController, UITableViewDelegate {
             heightEqualConstrainForSchedule.constant = scheduleTimeLabel.frame.width / 2
         }
     }
-    //
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -117,7 +112,7 @@ class DetailPlaceViewController: UIViewController, UITableViewDelegate {
             \(time[5])
             \(time[6])
             """
-        }else {
+        } else {
             clockInfo.isHidden = true
         }
         feedbackTableView.reloadData()
@@ -173,6 +168,7 @@ class DetailPlaceViewController: UIViewController, UITableViewDelegate {
                 innerView.clipsToBounds = true
             }
         }
+        
         mapAlert.addAction(UIAlertAction(title: "Place Map", style: .default, handler: {(action:UIAlertAction) in
             self.drawRouteAtPlaceMap(sourse: CLLocationCoordinate2D(latitude: pressCoordinate.latitude, longitude: pressCoordinate.longitude), destination: CLLocationCoordinate2D(latitude: (self.place.location?.latitude)!, longitude: (self.place.location?.longitude)!))
         }))
@@ -202,10 +198,7 @@ class DetailPlaceViewController: UIViewController, UITableViewDelegate {
             photoVC.indexPath = sender as? IndexPath
             photoVC.transitioningDelegate = self
             photoVC.modalPresentationStyle = .custom
-        }/*else if segue.identifier == "DetailToMap" {
-            let MapVC = segue.destination as! MapViewController
-            MapVC.map.add((sender as! MKRoute).polyline, level: .aboveRoads)
-        }*/
+        }
     }
     
     func setAllData() {
@@ -313,8 +306,6 @@ class DetailPlaceViewController: UIViewController, UITableViewDelegate {
             }
             
             self.dismiss(animated: true, completion: nil)
-            
-        //  self.performSegue(withIdentifier: "DetailToMap", sender: route)
         })
     }
 }

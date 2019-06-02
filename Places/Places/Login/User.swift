@@ -2,9 +2,9 @@
 //  User.swift
 //  Places
 //
-//  Created by Yurii Vients on 11/24/17.
-//  Created by Yurii Vients on 11/26/17.
-//  Copyright © 2017 andriibilan. All rights reserved.
+//  Created by Victoriia Rohozhyna on 11/24/17.
+//  Created by Victoriia Rohozhyna on 11/26/17.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 
 import Foundation
@@ -15,14 +15,14 @@ class Users {
     var email: String?
     var phone: String?
     var password: String?
-    var ImageUrl: String?
+    var imageUrl: String?
     
-    init(name: String, email: String, phone: String, ImageUrl: String) {
+    init(name: String, email: String, phone: String, imageUrl: String) {
         
         self.firstName = name
         self.email = email
         self.phone = phone
-        self.ImageUrl = ImageUrl
+        self.imageUrl = imageUrl
     }
     
     init(snapshot: DataSnapshot) {
@@ -33,7 +33,7 @@ class Users {
         self.email = value["email"] as? String ?? ""
         self.password = value["password"] as? String ?? ""
         self.phone = value["phone"] as? String ?? ""
-        self.ImageUrl = value["photoURL"] as? String ?? ""
+        self.imageUrl = value["photoURL"] as? String ?? ""
     }
 }
 

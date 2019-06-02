@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  Places
 //
-//  Created by andriibilan on 11/22/17.
-//  Copyright © 2017 andriibilan. All rights reserved.
+//  Created by Victoriia Rohozhyna on 11/22/17.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 import UIKit
 import Firebase
@@ -158,7 +158,7 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate, Sl
 		}
 		
 		if segue.identifier == "ShowSearch" {
-			let secondVC = segue.destination as! SearchVC
+			let secondVC = segue.destination as! SearchViewController
 			secondVC.transitioningDelegate = self
 			secondVC.modalPresentationStyle = .custom
 		}

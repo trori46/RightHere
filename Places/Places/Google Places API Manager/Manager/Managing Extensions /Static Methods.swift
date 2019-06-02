@@ -2,8 +2,8 @@
 //  Static Methods.swift
 //  Places
 //
-//  Created by andriibilan on 12/4/17.
-//  Copyright © 2017 andriibilan. All rights reserved.
+//  Created by Victoriia Rohozhyna on 12/4/17.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 
 import Foundation

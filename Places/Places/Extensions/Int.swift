@@ -2,7 +2,7 @@
 //  Int.swift
 //  Places
 //
-//  Created by Nazarii Melnyk on 11/21/17.
+//  Created by Victoriia Rohozhyna on 11/21/17.
 //  Copyright © 2017 Andrew. All rights reserved.
 //
 

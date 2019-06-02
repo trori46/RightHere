@@ -1,21 +1,14 @@
 //
-//  SearchVC.swift
+//  SearchViewController.swift
 //  Places
 //
-//  Created by Nazarii Melnyk on 11/21/17.
+//  Created by Victoriia Rohozhyna on 11/21/17.
 //  Copyright © 2017 Andrew. All rights reserved.
 //
 
-/*
- 'NSInternalInconsistencyException', reason: 'attempt to delete row 1 from section 1, but there are only 1 sections before the update'
- 
- what is that ???!
-*/
-
-
 import UIKit
 
-class SearchVC: UIViewController, UITableViewDataSource, UITableViewDelegate,  UISearchBarDelegate {
+class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate,  UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,25 +26,6 @@ class SearchVC: UIViewController, UITableViewDataSource, UITableViewDelegate,  U
                     self.filteredPlaces = foundedPlaces
                 }
         })
-        
-        
-        /*
-        Timer.scheduledTimer(withTimeInterval: 10.0, repeats: false){ [weak self] _ in
-            if self == nil { return }
-            
-            if (self?.tableViewForPlaces.numberOfViewedRows)! >= 1 {
-                self?.googlePlacesManager.getRealDistance(toPlaceIndex: 0, toPlace: nil){_ in
-                    DispatchQueue.main.async { [weak self] in
-                        self?.tableViewForPlaces.reloadData()
-                    }
-                }
-                self?.googlePlacesManager.getPhotos(ofPlaceIndex: nil, ofPlace: self?.googlePlacesManager.foundedPlaces[0]){_ in
-                    self?.googlePlacesManager
-                    print("\n\tcheck now!")
-                }
-            }
-        }
-         */
     }
     
     var googlePlacesManager: GooglePlacesManager!
@@ -76,7 +50,7 @@ class SearchVC: UIViewController, UITableViewDataSource, UITableViewDelegate,  U
 }
 
 
-extension SearchVC{
+extension SearchViewController{
     // MARK: - TableView DataSource methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

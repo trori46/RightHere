@@ -2,8 +2,8 @@
 //  Extension for view.swift
 //  Places
 //
-//  Created by andriibilan on 11/26/17.
-//  Copyright © 2017 andriibilan. All rights reserved.
+//  Created by Victoriia Rohozhyna on 11/26/17.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 import UIKit
 

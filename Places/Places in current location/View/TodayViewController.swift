@@ -3,7 +3,7 @@
 //  Places In Current Location
 //
 //  Created by Andrew Konchak on 11/30/17.
-//  Copyright © 2017 andriibilan. All rights reserved.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 
 import UIKit

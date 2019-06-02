@@ -2,8 +2,8 @@
 //  MapViewController.swift
 //  Places
 //
-//  Created by andriibilan on 11/22/17.
-//  Copyright © 2017 andriibilan. All rights reserved.
+//  Created by Victoriia Rohozhyna on 11/22/17.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 
 import UIKit
@@ -13,7 +13,9 @@ import Firebase
 
 
 var pressCoordinate = Location(latitude: 49.841856, longitude: 24.031530)
-var filterArray = [PlaceType]()
+var filterArray: [PlaceType] = UserDefaults.standard.stringArray(forKey: "filter")
+    .map { $0.compactMap {
+        PlaceType.init(rawValue: $0)}} ?? PlaceType.all
 
 protocol SlashScreenDelegate: class {
     func splashScreen()
@@ -441,7 +443,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     var selectedCell = NSMutableIndexSet()
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var accessory=UITableViewCellAccessoryType.none
+        var accessory = UITableViewCellAccessoryType.none
         let filterCell = tableView.dequeueReusableCell(withIdentifier: "mapFilter", for: indexPath) as! MapFilterTableViewCell
         if selectedCell.contains(indexPath.row) {
             accessory = .checkmark
@@ -487,6 +489,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                 num += 1
             }
         } else {
+            if selectedCell.count == 0 {
+                filterArray = []
+            }
             selectedCell.add(indexPath.row)
             accessory = .checkmark
             filterArray.append(PlaceType(rawValue: GooglePlacesManager.makeConforming(type: nameFilterArray[indexPath.row]))!)
@@ -495,6 +500,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         if let cell = tableView.cellForRow(at: indexPath) {
             cell.accessoryType = accessory
         }
+        
+        UserDefaults.standard.set(filterArray.compactMap{ $0.rawValue }, forKey: "filter")
     }
     
     

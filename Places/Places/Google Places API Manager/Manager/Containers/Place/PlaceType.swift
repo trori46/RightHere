@@ -2,35 +2,34 @@
 //  PlaceType.swift
 //  Places
 //
-//  Created by Nazarii Melnyk on 11/27/17.
-//  Copyright © 2017 andriibilan. All rights reserved.
+//  Created by Victoriia Rohozhyna on 11/27/17.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 
 import Foundation
 
-enum PlaceType: String{
-    case bar
-    case cafe
-    case restaurant
-    case bank
-    case night_club
-    case museum
-    case beauty_salon
-    case pharmacy
-    case hospital
-    case bus_station
-    case gas_station
-    case university
-    case police
-    case church
-    case cemetery
-    case park
-    case gym
+enum PlaceType: String {
+    case bar = "bar"
+    case cafe = "cafe"
+    case restaurant = "restaurant"
+    case bank = "bank"
+    case night_club = "night_club"
+    case museum = "museum"
+    case beauty_salon = "beauty_salon"
+    case pharmacy = "pharmacy"
+    case hospital = "hospital"
+    case bus_station = "bus_station"
+    case gas_station = "gas_station"
+    case university = "university"
+    case police = "police"
+    case church = "church"
+    case cemetery = "cemetery"
+    case park = "park"
+    case gym = "gym"
     
     var printableStyle: String {
         return self.rawValue.replacingOccurrences(of: "_", with: " ").capitalized
     }
-    
     // unsupported by application types
     case accounting
     case caseairport

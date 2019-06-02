@@ -2,8 +2,8 @@
 //  SettingPassword.swift
 //  Places
 //
-//  Created by andriibilan on 12/12/17.
-//  Copyright © 2017 andriibilan. All rights reserved.
+//  Created by Victoriia Rohozhyna on 12/12/17.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 
 import UIKit

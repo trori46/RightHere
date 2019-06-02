@@ -2,8 +2,8 @@
 //  AddNewPlaceController.swift
 //  Places
 //  Elyx
-//  Created by adminaccount on 11/24/17.
-//  Copyright © 2017 andriibilan. All rights reserved.
+//  Created by Victoriia Rohozhyna on 11/24/17.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 
 import UIKit
@@ -74,39 +74,14 @@ class AddNewPlaceController: UIViewController, UITextFieldDelegate, UIScrollView
     }
    
     @objc func dismissKeyboard() {
-        /*if keyBoardPresent == true {
-            let newHeight = scroll.contentSize.height - offset
-            scroll.contentSize = CGSize(width: UIScreen.main.bounds.width, height: newHeight)
-            insideHeight.constant -= offset
-            upper.constant = 18
-            keyBoardPresent = false
-        }*/
-        //list.isHidden = true
         view.endEditing(true)
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {
-       /* if keyBoardPresent == false {
-            if let keyboardSize = (notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-                offset = keyboardSize.height
-                let newHeight = scroll.contentSize.height + offset
-                scroll.contentSize = CGSize(width: UIScreen.main.bounds.width, height: newHeight)
-                insideHeight.constant += offset
-                upper.constant += offset
-                keyBoardPresent = true
-            }
-        }*/
     }
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         if textField == category {
-          /*  if upper.constant != 18 {
-                let newHeight = scroll.contentSize.height - offset
-                scroll.contentSize = CGSize(width: UIScreen.main.bounds.width, height: newHeight)
-                insideHeight.constant -= offset
-                upper.constant = 18
-                keyBoardPresent = false
-            }*/
             list.isHidden = false
         }
         else {

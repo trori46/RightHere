@@ -2,8 +2,8 @@
 //  UITableViewExplicit.swift
 //  Places
 //
-//  Created by Nazarii Melnyk on 11/24/17.
-//  Copyright © 2017 andriibilan. All rights reserved.
+//  Created by Victoriia Rohozhyna on 11/24/17.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 
 import Foundation

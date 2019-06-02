@@ -2,8 +2,8 @@
 //  DetailPlaceCollectionViewDelegate.swift
 //  Places
 //
-//  Created by Andrii Antoniak on 12/14/17.
-//  Copyright © 2017 andriibilan. All rights reserved.
+//  Created by Victoriia Rohozhyna on 12/14/17.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 
 import Foundation

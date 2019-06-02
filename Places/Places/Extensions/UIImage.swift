@@ -2,8 +2,8 @@
 //  ExtensionForUIImage.swift
 //  Places
 //
-//  Created by Roman Melnychok on 28.11.17.
-//  Copyright © 2017 Roman Melnychok. All rights reserved.
+//  Created by Victoriia Rohozhyna on 28.11.17.
+//  Copyright © 2017 Victoriia Rohozhyna. All rights reserved.
 //
 
 import UIKit
